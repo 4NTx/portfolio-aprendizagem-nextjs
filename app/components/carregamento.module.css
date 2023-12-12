@@ -2,10 +2,18 @@
     font-size: 24px;
     margin-top: 20px;
     animation: digita 2s infinite;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .pontos {
     animation: piscar 2s infinite;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 @keyframes digita {
@@ -39,6 +47,10 @@
 .pikachu {
     align-items: center;
     text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .pokebola {
@@ -48,6 +60,10 @@
     justify-content: center;
     height: 150px;
     width: 150px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 
@@ -65,5 +81,9 @@
     .pokebola {
         height: 100px;
         width: 100px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
 }
