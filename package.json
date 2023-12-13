@@ -1,5 +1,5 @@
 {
-  "name": "portifolio",
+  "name": "porti",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,23 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
-    "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
-    "react-loading-skeleton": "^3.3.1",
-    "react-spinners": "^0.13.8"
+    "next": "14.0.4"
   },
   "devDependencies": {
+    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.4",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
-    "typescript": "^5"
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4"
   }
 }

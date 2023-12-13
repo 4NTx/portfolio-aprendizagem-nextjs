@@ -1,19 +1,23 @@
-.titulo {
-    font-size: 24px;
-    margin-top: 20px;
-    animation: digita 2s infinite;
+.container {
+    background-color: #233E47;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
 
+.titulo {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    animation: digita 2s infinite;
+    height: auto;
+    width: auto;
+}
+
 .pontos {
-    animation: piscar 2s infinite;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    animation: piscar 1s infinite;
+    height: auto;
+    width: auto;
 }
 
 @keyframes digita {
@@ -47,10 +51,8 @@
 .pikachu {
     align-items: center;
     text-align: center;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    height: auto;
+    width: auto;
 }
 
 .pokebola {
@@ -58,14 +60,9 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    height: 150px;
-    width: 150px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    height: auto;
+    width: auto;
 }
-
 
 @keyframes spin {
     0% {
@@ -77,13 +74,28 @@
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+
+    .titulo,
+    .pontos {
+        font-size: 1.2rem;
+    }
+
     .pokebola {
         height: 100px;
         width: 100px;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .titulo,
+    .pontos {
+        font-size: 1rem;
+    }
+
+    .pokebola {
+        height: 80px;
+        width: 80px;
     }
 }
