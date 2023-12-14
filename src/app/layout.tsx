@@ -1,13 +1,7 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
-
-export const metadata: Metadata = {
+export const metadata = {
   title: 'Artur - Portifólio',
-  description: 'Portifólio Simples para demonstração de habilidades e projetos full stack'
-};
+  description: 'Portifólio desenvolvedor Full-Stack',
+}
 
 export default function RootLayout({
   children,
@@ -16,7 +10,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={inter.className}>{children}</body>
-    </html >
+      <body>{children}</body>
+    </html>
   )
 }

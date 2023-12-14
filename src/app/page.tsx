@@ -1,16 +1,18 @@
 "use client"
+import { Terminal } from "./components/terminal/terminal";
+
 const Inicio: React.FC = () => {
 
-  return (
-    <>
-      <div>
-        <div className="min-h-screen flex justify-center items-center">
-          <h1 className="text-3xl">Bem-vindo à minha página</h1>
-        </div>
-      </div>
+    return (
+        <>
+            <div>
+                <div className="flex-1 lg:flex hidden justify-end">
+                    <Terminal />
+                </div>
+            </div>
 
-    </>
-  );
+        </>
+    );
 };
 
 export default Inicio;
