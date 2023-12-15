@@ -1,59 +1,55 @@
 .pontos {
-    animation: piscar 1s infinite;
-    height: auto;
-    width: auto;
+  animation: piscar 1s infinite;
+  height: auto;
+  width: auto;
 }
 
 .pikachu {
-
-    height: auto;
-    width: auto;
-
+  height: auto;
+  width: auto;
 }
 
 @keyframes digita {
+  0%,
+  100% {
+    content: "Carregando";
+  }
 
-    0%,
-    100% {
-        content: 'Carregando';
-    }
+  33% {
+    content: "Carregando.";
+  }
 
-    33% {
-        content: 'Carregando.';
-    }
-
-    66% {
-        content: 'Carregando..';
-    }
+  66% {
+    content: "Carregando..";
+  }
 }
 
 @keyframes piscar {
+  0%,
+  100% {
+    opacity: 0;
+  }
 
-    0%,
-    100% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
+  50% {
+    opacity: 1;
+  }
 }
 
 .pokebola {
-    animation: spin 2s linear infinite;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    height: auto;
-    width: auto;
+  animation: spin 2s linear infinite;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: auto;
 }
 
 @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    100% {
-        transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
+  }
 }
