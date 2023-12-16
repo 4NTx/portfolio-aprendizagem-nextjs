@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef, ReactNode } from "react";
 import React from "react";
-import { formatISOFullTime } from "../../lib/util/time";
+import { formatarHoraISOCompleta, formatarDataISO } from "../../lib/util/tempo";
 
 const aguardar = (ms: number) =>
   new Promise((resolve) => setTimeout(resolve, ms));
@@ -15,8 +15,8 @@ function Info({
 }) {
   const cor = tipo === "log" ? "text-green-400" : "text-[#ef4444]";
   const textoTipo = tipo === "log" ? "LOG" : "ERROR";
-  const tempoAtual = formatISOFullTime(new Date());
-  const dataAtual = new Date().toLocaleDateString();
+  const tempoAtual = formatarHoraISOCompleta(new Date());
+  const dataAtual = formatarDataISO(new Date());
 
   const possuiConteudo = React.Children.toArray(children).some((child) =>
     typeof child === "string" ? child.trim() !== "" : true
@@ -189,7 +189,7 @@ export function Terminal() {
 
   return (
     <div className="flex justify-end items-center h-screen">
-      <div className="min-w-[38rem] min-h-[25rem] max-w-xl max-h-lg rounded-lg bg-gray-800 mr-32">
+      <div className="min-w-[38rem] min-h-[24rem] max-w-xl max-h-lg rounded-lg bg-gray-800 mr-32">
         <div className="w-full bg-gray-900 rounded-t-lg flex p-2 gap-2">
           <div className="w-2.5 h-2.5 bg-red-500 rounded-full" />
           <div className="w-2.5 h-2.5 bg-yellow-500 rounded-full" />

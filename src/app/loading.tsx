@@ -11,7 +11,6 @@ export default function Loading() {
           alt="Carregando"
           width={300}
           height={300}
-          priority={true}
           className={styles.pikachu}
         />
         <div className={styles.pokebola}>
@@ -20,7 +19,6 @@ export default function Loading() {
             alt="Pokebola"
             width={160}
             height={160}
-            priority={true}
           />
         </div>
         <div className="text-[1.5rem] mt-5">
