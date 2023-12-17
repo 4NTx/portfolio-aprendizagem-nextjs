@@ -1,0 +1,80 @@
+.navbar {
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #111111;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 2rem;
+  z-index: 1000;
+  transition: box-shadow 0.3s ease-in-out;
+  justify-content: center;
+
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  left: 25rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  justify-content: center;
+}
+
+.logo img {
+  position: relative;
+  top: -10px;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: rotate(28deg);
+}
+
+.navItems {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  color: white;
+  text-decoration: none;
+  right: 12rem;
+  transition: color 1s ease, opacity 1s ease;
+  opacity: 0.8;
+  margin-left: -110px;
+}
+
+.navItems a:hover {
+  color: #e0e0e0;
+  opacity: 1;
+}
+.scrolled {
+  box-shadow: 0 10px 15px #1111118c;
+}
+
+.redes {
+  display: flex;
+  align-items: left;
+  gap: 1rem;
+  margin-right: 15rem;
+  position: absolute;
+}
+
+.redes {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-right: -60rem;
+}
+
+.rede {
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.rede:hover {
+  color: #e0e0e0;
+}

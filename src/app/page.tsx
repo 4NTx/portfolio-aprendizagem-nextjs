@@ -1,10 +1,13 @@
 "use client";
 import { Terminal } from "./components/terminal/terminal";
 import styles from "./page.module.css";
+import Navbar from "./components/navbar/navbar";
+
 
 const Inicio: React.FC = () => {
   return (
     <>
+      <Navbar />
       <header className={styles.container}>
         <div className={styles.tituloHeader}>
           <h1 className={styles.tituloHeader}>
@@ -19,7 +22,9 @@ const Inicio: React.FC = () => {
             harum ducimus quisquam, sit debitis, neque sequi provident,
             inventore fugit reiciendis architecto aspernatur accusantium
             ratione.
-          </p>
+          </p>{" "}
+          <button className={styles.botaoUm}>Acessar</button>
+          <button className={styles.botaoDois}>Contato</button>
         </div>
         <div>
           <Terminal />
