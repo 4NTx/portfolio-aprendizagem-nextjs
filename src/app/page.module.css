@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  align-items: center;
+  margin-top: -5rem;
+  margin-left: 5rem;
+  font-family: "Roboto", sans-serif;
+  padding: 5rem;
+}
+
+.tituloHeader {
+  font-weight: medium;
+  line-height: 1.5;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+.tituloHeaderSpan {
+  color: #0070f3;
+  margin-left: auto;
+}
+
+.textoHeader {
+  font-size: 1.25rem;
+  color: #ffffff;
+  max-width: 70%;
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+    padding: 2rem;
+  }
+
+  .tituloHeader {
+    font-size: 2rem;
+  }
+
+  .textoHeader {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+}

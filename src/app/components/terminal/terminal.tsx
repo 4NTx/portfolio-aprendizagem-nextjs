@@ -188,8 +188,8 @@ export function Terminal() {
   }, [saida, sucesso]);
 
   return (
-    <div className="flex justify-end items-center h-screen">
-      <div className="min-w-[38rem] min-h-[24rem] max-w-xl max-h-lg rounded-lg bg-gray-800 mr-32">
+    <div className="flex items-center h-screen">
+      <div className="min-w-[38rem] min-h-[25rem] max-w-xl rounded-lg bg-gray-800 mr-12">
         <div className="w-full bg-gray-900 rounded-t-lg flex p-2 gap-2">
           <div className="w-2.5 h-2.5 bg-red-500 rounded-full" />
           <div className="w-2.5 h-2.5 bg-yellow-500 rounded-full" />
@@ -197,7 +197,7 @@ export function Terminal() {
         </div>
         <div
           ref={terminalRef}
-          className="p-4 font-mono text-xs text-white overflow-y-auto max-h-[24rem] scroll-smooth"
+          className="p-5 font-mono text-xs text-white overflow-y-auto max-h-[22rem] scroll-smooth"
         >
           <div>
             <span className="text-green-400">$ </span>
