@@ -10,7 +10,6 @@
   z-index: 1000;
   transition: box-shadow 0.3s ease-in-out;
   justify-content: center;
-
   position: relative;
 }
 
@@ -77,4 +76,28 @@
 
 .rede:hover {
   color: #e0e0e0;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .logo {
+    position: static;
+    margin-bottom: 1rem;
+  }
+
+  .navItems {
+    justify-content: center;
+    position: static;
+    margin-right: 0;
+  }
+
+  .redes {
+    position: static;
+    margin-top: 1rem;
+  }
 }

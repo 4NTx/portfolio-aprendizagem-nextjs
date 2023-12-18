@@ -7,25 +7,9 @@
   padding: 5rem;
 }
 
-.tituloHeader {
-  font-weight: medium;
-  line-height: 1.5;
-  color: #ffffff;
-  margin-bottom: 2rem;
-  font-size: 3rem;
-  margin-top: 0;
-}
-
 .tituloHeaderSpan {
   color: #2563eb;
   margin-left: auto;
-}
-
-.textoHeader {
-  font-size: 1.25rem;
-  color: #ffffff;
-  max-width: 70%;
-  margin-top: 0;
 }
 
 .botaoUm {
@@ -63,6 +47,31 @@
   background-color: #252629;
 }
 
+.tituloHeader {
+  font-size: 3rem; /* Tamanho original da fonte */
+  line-height: 1.5;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+.textoHeader {
+  font-size: 1.25rem;
+  color: #ffffff;
+  max-width: 70%;
+  margin-top: 0;
+}
+@media (max-width: 768px) {
+  .tituloHeader {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .textoHeader {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+}
 @media (max-width: 768px) {
   .container {
     flex-direction: column;

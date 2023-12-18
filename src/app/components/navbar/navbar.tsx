@@ -19,14 +19,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ""}`}>
       <div className={styles.logo}>
-        <Link href="/">
-          <Image
-            src="/imagens/pokebola.png"
-            alt="Logo"
-            width={50}
-            height={50}
-          />
-        </Link>
+        <Link href="/projetos"> 4NTx </Link>
       </div>
 
       <div>
