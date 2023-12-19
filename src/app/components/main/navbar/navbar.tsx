@@ -18,9 +18,11 @@ const Navbar: React.FC = () => {
   }, []);
   return (
     <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ""}`}>
-      <div className={styles.logo}>
+     <div>
+
+     
         <Link href="/projetos"> 4NTx </Link>
-      </div>
+      
 
       <div>
         <ul className={styles.navItems}>
@@ -91,6 +93,7 @@ const Navbar: React.FC = () => {
             </svg>
           </a>
         </div>
+      </div>
       </div>
     </nav>
   );

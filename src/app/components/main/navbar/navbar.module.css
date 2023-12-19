@@ -14,8 +14,8 @@
 }
 
 .logo {
-  position: absolute;
-  left: 25rem;
+  /* position: absolute; */
+  /* left: 25rem; */
   color: white;
   text-decoration: none;
   font-size: 1.5rem;
@@ -38,16 +38,17 @@
   gap: 1rem;
   color: white;
   text-decoration: none;
-  right: 12rem;
+  /* right: 12rem; */
   transition: color 1s ease, opacity 1s ease;
   opacity: 0.8;
-  margin-left: -110px;
+  /* margin-left: -110px; */
 }
 
 .navItems a:hover {
   color: #e0e0e0;
   opacity: 1;
 }
+
 .scrolled {
   box-shadow: 0 10px 15px #1111118c;
 }
@@ -56,15 +57,15 @@
   display: flex;
   align-items: left;
   gap: 1rem;
-  margin-right: 15rem;
-  position: absolute;
+  /* margin-right: 15rem; */
+  /* position: absolute; */
 }
 
 .redes {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-right: -60rem;
+  /* margin-right: -60rem; */
 }
 
 .rede {

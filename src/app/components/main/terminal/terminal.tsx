@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef, ReactNode } from "react";
 import React from "react";
-import { formatarHoraISOCompleta, formatarDataISO } from "../../lib/util/tempo";
+import { formatarHoraISOCompleta, formatarDataISO } from "../../../lib/util/tempo";
 
 const aguardar = (ms: number) =>
   new Promise((resolve) => setTimeout(resolve, ms));

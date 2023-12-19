@@ -1,14 +1,15 @@
 "use client";
-import { Terminal } from "./components/terminal/terminal";
+import { Terminal } from "./components/main/terminal/terminal";
 import styles from "./page.module.css";
-import Navbar from "./components/navbar/navbar";
+import Navbar from "./components/main/navbar/navbar";
 
 
 const Inicio: React.FC = () => {
   return (
     <>
       <Navbar />
-      <header className={styles.container}>
+      <main className={styles.container}>
+        <div>
         <div className={styles.tituloHeader}>
           <h1 className={styles.tituloHeader}>
             Lorem ipsum dolor sit amet <br />
@@ -28,8 +29,12 @@ const Inicio: React.FC = () => {
         </div>
         <div>
           <Terminal />
+          </div>
         </div>
-      </header>
+      </main>
+      <section>
+          <p> AAAAAAAAAAAAAAAAA </p>
+        </section>
     </>
   );
 };
