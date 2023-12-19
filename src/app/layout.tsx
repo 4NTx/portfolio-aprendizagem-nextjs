@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Artur - Portifólio",
-  description: "Portifólio desenvolvedor Full-Stack",
+  title: "Artur - Portfólio",
+  description: "Portfólio desenvolvedor Full-Stack",
 };
 
 export default function RootLayout({

@@ -1,6 +1,9 @@
 import { useEffect, useState, useRef, ReactNode } from "react";
 import React from "react";
-import { formatarHoraISOCompleta, formatarDataISO } from "../../../lib/util/tempo";
+import {
+  formatarHoraISOCompleta,
+  formatarDataISO,
+} from "../../../lib/util/tempo";
 
 const aguardar = (ms: number) =>
   new Promise((resolve) => setTimeout(resolve, ms));
@@ -188,7 +191,7 @@ export function Terminal() {
   }, [saida, sucesso]);
 
   return (
-    <div className="flex items-center h-screen">
+    <div className="flex items-center">
       <div className="hidden md:block min-w-[38rem] min-h-[25rem] max-w-xl rounded-lg bg-gray-800 mr-12">
         <div className="w-full bg-gray-900 rounded-t-lg flex p-2 gap-2">
           <div className="w-2.5 h-2.5 bg-red-500 rounded-full" />

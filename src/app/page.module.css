@@ -49,7 +49,6 @@
 
 .tituloHeader {
   font-size: 3rem;
-  /* Tamanho original da fonte */
   line-height: 1.5;
   color: #ffffff;
   margin-bottom: 2rem;
@@ -61,34 +60,4 @@
   color: #ffffff;
   max-width: 70%;
   margin-top: 0;
-}
-
-@media (max-width: 768px) {
-  .tituloHeader {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .textoHeader {
-    font-size: 1rem;
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 0;
-    padding: 2rem;
-  }
-
-  .tituloHeader {
-    font-size: 2rem;
-  }
-
-  .textoHeader {
-    font-size: 1rem;
-    max-width: 100%;
-  }
 }

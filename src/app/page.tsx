@@ -3,14 +3,12 @@ import { Terminal } from "./components/main/terminal/terminal";
 import styles from "./page.module.css";
 import Navbar from "./components/main/navbar/navbar";
 
-
 const Inicio: React.FC = () => {
   return (
     <>
       <Navbar />
       <main className={styles.container}>
         <div>
-        <div className={styles.tituloHeader}>
           <h1 className={styles.tituloHeader}>
             Lorem ipsum dolor sit amet <br />
             <span className={styles.tituloHeaderSpan}>
@@ -27,14 +25,10 @@ const Inicio: React.FC = () => {
           <button className={styles.botaoUm}>Acessar</button>
           <button className={styles.botaoDois}>Contato</button>
         </div>
-        <div>
+        <div className={styles.terminal}>
           <Terminal />
-          </div>
         </div>
       </main>
-      <section>
-          <p> AAAAAAAAAAAAAAAAA </p>
-        </section>
     </>
   );
 };
