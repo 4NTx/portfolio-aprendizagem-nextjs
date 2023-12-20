@@ -1,0 +1,75 @@
+.terminalContainer {
+  display: flex;
+  align-items: center;
+}
+
+.terminal {
+  width: 100%;
+  min-width: 38rem;
+  min-height: 25rem;
+  max-width: 38rem;
+  border-radius: 0.5rem;
+  background-color: #1f2937;
+}
+
+.terminalHeader {
+  width: 100%;
+  background-color: #111827;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.terminalDot {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 9999px;
+}
+
+.dotVermelho {
+  background-color: #ef4444;
+}
+
+.dotAmarelo {
+  background-color: #f59e0b;
+}
+
+.dotVerde {
+  background-color: #10b981;
+}
+
+.terminalBody {
+  padding: 1.25rem;
+  font-family: monospace;
+  font-size: 0.68rem;
+  color: white;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  max-height: 22rem;
+}
+
+.textoVerde {
+  color: rgb(74 222 128);
+}
+
+.textoAzul {
+  color: rgb(96 165 250);
+}
+
+.textoCinza {
+  color: rgb(156 163 175);
+}
+
+.textoVermelho {
+  color: #ef4444;
+}
+
+.textoAmarelo {
+  color: #fef08a;
+}
+
+.textoBranco {
+  color: white;
+}

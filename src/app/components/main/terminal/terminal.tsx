@@ -4,6 +4,7 @@ import {
   formatarHoraISOCompleta,
   formatarDataISO,
 } from "../../../lib/util/tempo";
+import styles from "./terminal.module.css";
 
 const aguardar = (ms: number) =>
   new Promise((resolve) => setTimeout(resolve, ms));
@@ -16,7 +17,7 @@ function Info({
   tipo: "log" | "erro";
   children: ReactNode;
 }) {
-  const cor = tipo === "log" ? "text-green-400" : "text-[#ef4444]";
+  const cor = tipo === "log" ? styles.textoVerde : styles.textoVermelho;
   const textoTipo = tipo === "log" ? "LOG" : "ERROR";
   const tempoAtual = formatarHoraISOCompleta(new Date());
   const dataAtual = formatarDataISO(new Date());
@@ -31,8 +32,8 @@ function Info({
         <span className={cor}>[Nest]</span>
         <span className={cor}> 29512 </span>
         <span className={cor}> - </span>
-        <span className="text-white">{dataAtual}, </span>
-        <span className="text-white">{tempoAtual}</span>
+        <span className={styles.TextoBranco}>{dataAtual}, </span>
+        <span className={styles.TextoBranco}>{tempoAtual}</span>
         <span className={cor}> {textoTipo} </span> {children}
       </div>
     );
@@ -54,57 +55,59 @@ export function Terminal() {
       const argumentosCompletos = " --watch";
       const linhasSaida = [
         <Info key="1" tipo="log">
-          <span className="text-[#fef08a]">[NestFactory] </span>‎
-          <span className="text-green-400">Starting Nest application...</span>
+          <span className={styles.textoAmarelo}>[NestFactory] </span>‎
+          <span className={styles.textoVerde}>
+            Starting Nest application...
+          </span>
         </Info>,
         <Info key="2" tipo="log">
-          <span className="text-[#fef08a]">[InstanceLoader] </span>‎
-          <span className="text-green-400">
+          <span className={styles.textoAmarelo}>[InstanceLoader] </span>‎
+          <span className={styles.textoVerde}>
             AppModule dependencies initialized
           </span>
-          <span className="text-[#fef08a]"> +82ms</span>
+          <span className={styles.textoAmarelo}> +82ms</span>
         </Info>,
         <Info key="3" tipo="log">
-          <span className="text-[#fef08a]">[InstanceLoader] </span>‎
-          <span className="text-green-400">
+          <span className={styles.textoAmarelo}>[InstanceLoader] </span>‎
+          <span className={styles.textoVerde}>
             TypeOrmModule dependencies initialized
           </span>
-          <span className="text-[#fef08a]"> +0ms</span>
+          <span className={styles.textoAmarelo}> +0ms</span>
         </Info>,
         <Info key="4" tipo="log">
-          <span className="text-[#fef08a]">[InstanceLoader] </span>‎
-          <span className="text-green-400">
+          <span className={styles.textoAmarelo}>[InstanceLoader] </span>‎
+          <span className={styles.textoVerde}>
             PassportModule dependencies initialized
           </span>
-          <span className="text-[#fef08a]"> +0ms</span>
+          <span className={styles.textoAmarelo}> +0ms</span>
         </Info>,
         <Info key="5" tipo="log">
-          <span className="text-[#fef08a]">[InstanceLoader] </span>‎
-          <span className="text-green-400">
+          <span className={styles.textoAmarelo}>[InstanceLoader] </span>‎
+          <span className={styles.textoVerde}>
             JwtModule dependencies initialized
           </span>
-          <span className="text-[#fef08a]"> +0ms</span>
+          <span className={styles.textoAmarelo}> +0ms</span>
         </Info>,
         <Info key="6" tipo="log">
-          <span className="text-[#fef08a]">[InstanceLoader] </span>‎
-          <span className="text-green-400">
+          <span className={styles.textoAmarelo}>[InstanceLoader] </span>‎
+          <span className={styles.textoVerde}>
             TypeOrmCoreModule dependencies initialized
           </span>
-          <span className="text-[#fef08a]"> +0ms</span>
+          <span className={styles.textoAmarelo}> +0ms</span>
         </Info>,
         <Info key="7" tipo="log">
-          <span className="text-[#fef08a]">[RouterExplorer] </span>‎
-          <span className="text-green-400">
+          <span className={styles.textoAmarelo}>[RouterExplorer] </span>‎
+          <span className={styles.textoVerde}>
             Mapped /dados/media/:estado, GET route
           </span>
-          <span className="text-[#fef08a]"> +0ms</span>
+          <span className={styles.textoAmarelo}> +0ms</span>
         </Info>,
         <Info key="8" tipo="log">
-          <span className="text-[#fef08a]">[NestApplication] </span>‎
-          <span className="text-green-400">
+          <span className={styles.textoAmarelo}>[NestApplication] </span>‎
+          <span className={styles.textoVerde}>
             Nest application successfully started
           </span>
-          <span className="text-[#fef08a]"> +3ms</span>
+          <span className={styles.textoAmarelo}> +3ms</span>
         </Info>,
       ];
 
@@ -144,11 +147,11 @@ export function Terminal() {
       setSucesso(
         <Info tipo="erro">
           {" "}
-          <span className="text-[#fef08a]">[NestApplication] </span>{" "}
-          <span className="text-[#ef4444]">
+          <span className={styles.textoAmarelo}>[NestApplication] </span>{" "}
+          <span className={styles.textoVermelho}>
             Error: listen EADDRINUSE: address already in use :::3000
           </span>
-          <span className="text-[#fef08a]"> +2ms</span>
+          <span className={styles.textoAmarelo}> +2ms</span>
           <br />
           <p>Error: listen EADDRINUSE: address already in use :::3000</p>
           <p> at Server.setupListenHandle [as _listen2] (node:net:1872:16)</p>
@@ -191,24 +194,21 @@ export function Terminal() {
   }, [saida, sucesso]);
 
   return (
-    <div className="flex items-center">
-      <div className="hidden md:block min-w-[38rem] min-h-[25rem] max-w-xl rounded-lg bg-gray-800 mr-12">
-        <div className="w-full bg-gray-900 rounded-t-lg flex p-2 gap-2">
-          <div className="w-2.5 h-2.5 bg-red-500 rounded-full" />
-          <div className="w-2.5 h-2.5 bg-yellow-500 rounded-full" />
-          <div className="w-2.5 h-2.5 bg-green-500 rounded-full" />
+    <div className={styles.terminalContainer}>
+      <div className={styles.terminal}>
+        <div className={styles.terminalHeader}>
+          <div className={`${styles.terminalDot} ${styles.dotVermelho}`}></div>
+          <div className={`${styles.terminalDot} ${styles.dotAmarelo}`}></div>
+          <div className={`${styles.terminalDot} ${styles.dotVerde}`}></div>
         </div>
-        <div
-          ref={terminalRef}
-          className="p-5 font-mono text-xs text-white overflow-y-auto max-h-[22rem] scroll-smooth"
-        >
+        <div ref={terminalRef} className={styles.terminalBody}>
           <div>
-            <span className="text-green-400">$ </span>
-            <span className="text-blue-400">{comando}</span>
-            <span>{argumentos}</span>
+            <span className={styles.textoVerde}>$ </span>
+            <span className={styles.textoAzul}>{comando}</span>
+            {argumentos}
           </div>
           <div>
-            <span className="text-gray-400">{carregando}</span>
+            <span className={styles.textoCinza}>{carregando}</span>
           </div>
           <div>{saida}</div>
           <div>{sucesso}</div>
