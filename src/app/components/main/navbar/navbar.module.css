@@ -11,17 +11,17 @@
   transition: box-shadow 0.3s ease-in-out;
   justify-content: center;
   position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .logo {
-  /* position: absolute; */
-  /* left: 25rem; */
-  color: white;
-  text-decoration: none;
-  font-size: 1.5rem;
   justify-content: center;
   display: flex;
-  gap: 1rem;
+  width: auto;
+  height: auto;
 }
 
 .navItems {

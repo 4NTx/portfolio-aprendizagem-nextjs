@@ -1,8 +1,6 @@
 .container {
   display: flex;
   align-items: center;
-  /* margin-top: -12rem;
-  margin-left: 5rem; */
   font-family: "Roboto", sans-serif;
   padding: 5rem;
 }
