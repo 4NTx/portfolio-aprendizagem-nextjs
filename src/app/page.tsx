@@ -131,26 +131,6 @@ const Inicio: React.FC = () => {
             harum ducimus quisquam, sit debitis, neque sequi provident,
             inventore fugit reiciendis architecto aspernatur accusantium
             ratione.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At
-            repudiandae consequuntur praesentium recusandae voluptatem eius
-            harum ducimus quisquam, sit debitis, neque sequi provident,
-            inventore fugit reiciendis architecto aspernatur accusantium
-            ratione.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At
-            repudiandae consequuntur praesentium recusandae voluptatem eius
-            harum ducimus quisquam, sit debitis, neque sequi provident,
-            inventore fugit reiciendis architecto aspernatur accusantium
-            ratione.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At
-            repudiandae consequuntur praesentium recusandae voluptatem eius
-            harum ducimus quisquam, sit debitis, neque sequi provident,
-            inventore fugit reiciendis architecto aspernatur accusantium
-            ratione.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At
-            repudiandae consequuntur praesentium recusandae voluptatem eius
-            harum ducimus quisquam, sit debitis, neque sequi provident,
-            inventore fugit reiciendis architecto aspernatur accusantium
-            ratione.
           </p>{" "}
           <button className={styles.botaoUm}>Acessar</button>
           <button className={styles.botaoDois}>Contato</button>

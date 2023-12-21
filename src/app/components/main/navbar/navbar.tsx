@@ -69,7 +69,7 @@ const Navbar: React.FC = () => {
             target="_blank"
             className={styles.redesItems}
             aria-label="Linkedin"
-            href="https://www.linkedin.com/in/arturrick/"
+            href="https://www.linkedin.com/in//"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
