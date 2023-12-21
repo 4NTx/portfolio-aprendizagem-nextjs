@@ -6,7 +6,9 @@ import Navbar from "./components/main/navbar/navbar";
 const Inicio: React.FC = () => {
   return (
     <>
-      <Navbar />
+      <div>
+        <Navbar />
+      </div>
       <main className={styles.container}>
         <div>
           <h1 className={styles.tituloHeader}>
@@ -16,46 +18,6 @@ const Inicio: React.FC = () => {
             </span>
           </h1>
           <p className={styles.textoHeader}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At
-            repudiandae consequuntur praesentium recusandae voluptatem eius
-            harum ducimus quisquam, sit debitis, neque sequi provident,
-            inventore fugit reiciendis architecto aspernatur accusantium
-            ratione.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At
-            repudiandae consequuntur praesentium recusandae voluptatem eius
-            harum ducimus quisquam, sit debitis, neque sequi provident,
-            inventore fugit reiciendis architecto aspernatur accusantium
-            ratione.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At
-            repudiandae consequuntur praesentium recusandae voluptatem eius
-            harum ducimus quisquam, sit debitis, neque sequi provident,
-            inventore fugit reiciendis architecto aspernatur accusantium
-            ratione.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At
-            repudiandae consequuntur praesentium recusandae voluptatem eius
-            harum ducimus quisquam, sit debitis, neque sequi provident,
-            inventore fugit reiciendis architecto aspernatur accusantium
-            ratione.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At
-            repudiandae consequuntur praesentium recusandae voluptatem eius
-            harum ducimus quisquam, sit debitis, neque sequi provident,
-            inventore fugit reiciendis architecto aspernatur accusantium
-            ratione.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At
-            repudiandae consequuntur praesentium recusandae voluptatem eius
-            harum ducimus quisquam, sit debitis, neque sequi provident,
-            inventore fugit reiciendis architecto aspernatur accusantium
-            ratione.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At
-            repudiandae consequuntur praesentium recusandae voluptatem eius
-            harum ducimus quisquam, sit debitis, neque sequi provident,
-            inventore fugit reiciendis architecto aspernatur accusantium
-            ratione.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At
-            repudiandae consequuntur praesentium recusandae voluptatem eius
-            harum ducimus quisquam, sit debitis, neque sequi provident,
-            inventore fugit reiciendis architecto aspernatur accusantium
-            ratione.
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. At
             repudiandae consequuntur praesentium recusandae voluptatem eius
             harum ducimus quisquam, sit debitis, neque sequi provident,

@@ -20,7 +20,7 @@ export default function NotFound() {
       <p className="mb-5 text-[1.5rem]">
         <span className="text-[#f4dc26]">Oops!</span> Não achamos esta página.
       </p>
-      <Link href="/" legacyBehavior>
+      <Link href="/">
         <a className="py-2.5 px-5 bg-[#f4dc26] text-[#233E47] rounded-full no-underline cursor-pointer text-[1.1rem] transition-colors duration-300 hover:bg-yellow-300/75 font-sans">
           VOLTAR
         </a>

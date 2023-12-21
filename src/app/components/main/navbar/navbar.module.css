@@ -1,25 +1,37 @@
 .navbar {
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: #111111;
   color: white;
   display: flex;
-  justify-content: space-between;
-  padding: 2rem 2rem;
-  z-index: 1000;
-  transition: box-shadow 0.3s ease-in-out;
   justify-content: center;
-  position: relative;
+  gap: 3rem;
+  z-index: 1000;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.navbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #111;
+  opacity: 0.95;
+  z-index: -1;
+  filter: blur(1px);
 }
 
 .navItems {
   list-style: none;
   display: flex;
+  align-items: center;
   gap: 1rem;
   color: white;
   text-decoration: none;
@@ -34,7 +46,8 @@
 
 .redes {
   display: flex;
-  gap: 6rem;
+  gap: 0.5rem;
+  align-items: center;
 }
 
 .redesItems {
