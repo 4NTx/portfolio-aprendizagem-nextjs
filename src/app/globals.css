@@ -1,11 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --toastify-color-progress-success: linear-gradient(
+    to right,
+    #2563eb,
+    #e0e0e0
+  );
+  --toastify-icon-color-success: #2563eb;
 }
 
 @media (prefers-color-scheme: dark) {
