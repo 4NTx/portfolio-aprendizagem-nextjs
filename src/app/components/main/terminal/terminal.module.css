@@ -19,7 +19,7 @@
   color: white;
   overflow-y: auto;
   scroll-behavior: smooth;
-  max-height: 22rem;
+  max-height: 20rem;
 }
 
 .terminal {
