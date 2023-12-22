@@ -1,14 +1,63 @@
-.pokebola {
-  animation: spin 3s linear infinite, scale 3s ease-in-out infinite;
-  max-width: 100%;
-  height: auto;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #111111;
+  font-family: monospace;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
-@keyframes spin {
+.div404 {
+  display: flex;
+  align-items: center;
+  font-size: 8rem;
+  margin-bottom: 1.25rem;
+  align-items: stretch;
+}
+
+.mensagem {
+  margin-bottom: 1.25rem;
+  font-size: 1.5rem;
+}
+
+.mensagem span {
+  color: #2563eb;
+}
+
+.botao {
+  padding: 1.1rem 2rem;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 9999px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: color 300ms;
+  font-family: sans-serif;
+}
+
+.botao:hover {
+  background-color: #0051ff79;
+}
+
+.pokebola {
+  animation: spin 3s linear infinite, scale 3s ease-in-out infinite;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@keyframes rodarPokebola {
   from {
     transform: rotate(0deg);
   }

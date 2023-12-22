@@ -4,15 +4,15 @@
   justify-content: center;
   gap: 3rem;
   z-index: 1000;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   position: fixed;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .navbar::before {
@@ -28,29 +28,41 @@
   filter: blur(1px);
 }
 
-.navItems {
+.itemsNavbar {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+  opacity: 0.8;
+}
+
+.itemsNavbar li a {
   list-style: none;
   display: flex;
   align-items: center;
   gap: 1rem;
   color: white;
   text-decoration: none;
-  transition: color 1s ease, opacity 1s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
   opacity: 0.8;
 }
 
-.navItems a:hover {
+.itemsNavbar li a:hover {
+  transform: translateY(-3px);
   color: #e0e0e0;
   opacity: 1;
 }
 
-.redes {
+.redesSociais {
   display: flex;
   gap: 0.5rem;
   align-items: center;
 }
 
-.redesItems {
+.redesSociaisItems {
   display: inline-flex;
   align-items: center;
   height: min-content;
@@ -61,24 +73,14 @@
   transition: background-color 0.2s;
 }
 
-.redesItems:hover {
+.redesSociaisItems:hover {
   background-color: #2d2f31;
 }
 
-.redesSVG {
+.redesSociaisSVG {
   height: 1.5rem;
   width: 1.5rem;
   fill: #e0e0e0;
-}
-
-@keyframes pulse {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
 }
 
 .logo {
@@ -86,10 +88,20 @@
   display: flex;
   width: auto;
   height: auto;
-  animation: pulse 2s infinite ease-in-out;
+  animation: balancoLogo 3s infinite ease-in-out;
   transition: filter 0.8s ease;
 }
 
 .logo:hover {
   filter: grayscale(80%);
+}
+
+@keyframes balancoLogo {
+  0%,
+  100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
 }

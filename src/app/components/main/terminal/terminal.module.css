@@ -1,15 +1,6 @@
-.terminalContainer {
+.container {
   display: flex;
   align-items: center;
-}
-
-.terminal {
-  width: 100%;
-  min-width: 38rem;
-  min-height: 25rem;
-  max-width: 38rem;
-  border-radius: 0.5rem;
-  background-color: #1f2937;
 }
 
 .terminalHeader {
@@ -22,24 +13,6 @@
   gap: 0.5rem;
 }
 
-.terminalDot {
-  width: 0.625rem;
-  height: 0.625rem;
-  border-radius: 9999px;
-}
-
-.dotVermelho {
-  background-color: #ef4444;
-}
-
-.dotAmarelo {
-  background-color: #f59e0b;
-}
-
-.dotVerde {
-  background-color: #10b981;
-}
-
 .terminalBody {
   padding: 1.25rem;
   font-family: monospace;
@@ -48,6 +21,33 @@
   overflow-y: auto;
   scroll-behavior: smooth;
   max-height: 22rem;
+}
+
+.terminal {
+  width: 100%;
+  min-width: 38rem;
+  min-height: 25rem;
+  max-width: 38rem;
+  border-radius: 0.5rem;
+  background-color: #1f2937;
+}
+
+.terminalPonto {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 9999px;
+}
+
+.pontoVermelho {
+  background-color: #ef4444;
+}
+
+.pontoAmarelo {
+  background-color: #f59e0b;
+}
+
+.pontoVerde {
+  background-color: #10b981;
 }
 
 .textoVerde {

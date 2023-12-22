@@ -19,7 +19,7 @@ function Info({
 }) {
   const cor = tipo === "log" ? styles.textoVerde : styles.textoVermelho;
   const textoTipo = tipo === "log" ? "LOG" : "ERROR";
-  const tempoAtual = formatarHoraISOCompleta(new Date());
+  const horaAtual = formatarHoraISOCompleta(new Date());
   const dataAtual = formatarDataISO(new Date());
 
   const possuiConteudo = React.Children.toArray(children).some((child) =>
@@ -32,8 +32,8 @@ function Info({
         <span className={cor}>[Nest]</span>
         <span className={cor}> 29512 </span>
         <span className={cor}> - </span>
-        <span className={styles.TextoBranco}>{dataAtual}, </span>
-        <span className={styles.TextoBranco}>{tempoAtual}</span>
+        <span className={styles.textoBranco}>{dataAtual}, </span>
+        <span className={styles.textoBranco}>{horaAtual}</span>
         <span className={cor}> {textoTipo} </span> {children}
       </div>
     );
@@ -146,8 +146,7 @@ export function Terminal() {
 
       setSucesso(
         <Info tipo="erro">
-          {" "}
-          <span className={styles.textoAmarelo}>[NestApplication] </span>{" "}
+          <span className={styles.textoAmarelo}>[NestApplication] </span>
           <span className={styles.textoVermelho}>
             Error: listen EADDRINUSE: address already in use :::3000
           </span>
@@ -158,23 +157,19 @@ export function Terminal() {
           <p> at listenInCluster (node:net:1920:12)</p>
           <p> at Server.listen (node:net:2008:7)</p>
           <p>
-            {" "}
             at ExpressAdapter.listen
             (A:\projetinhos\sistema\node_modules\@nestjs\platform-express\adapters\express-adapter.js:88:32)
           </p>
           <p>
-            {" "}
             at
             A:\projetinhos\sistema\node_modules\@nestjs\core\nest-application.js:180:30
           </p>
           <p> at new Promise (anonymous)</p>
           <p>
-            {" "}
             at NestApplication.listen
             (A:\projetinhos\sistema\node_modules\@nestjs\core\nest-application.js:170:16)
           </p>
           <p>
-            {" "}
             at processTicksAndRejections
             (node:internal/process/task_queues:95:5)
           </p>
@@ -194,12 +189,16 @@ export function Terminal() {
   }, [saida, sucesso]);
 
   return (
-    <div className={styles.terminalContainer}>
+    <div className={styles.container}>
       <div className={styles.terminal}>
         <div className={styles.terminalHeader}>
-          <div className={`${styles.terminalDot} ${styles.dotVermelho}`}></div>
-          <div className={`${styles.terminalDot} ${styles.dotAmarelo}`}></div>
-          <div className={`${styles.terminalDot} ${styles.dotVerde}`}></div>
+          <div
+            className={`${styles.terminalPonto} ${styles.pontoVermelho}`}
+          ></div>
+          <div
+            className={`${styles.terminalPonto} ${styles.pontoAmarelo}`}
+          ></div>
+          <div className={`${styles.terminalPonto} ${styles.pontoVerde}`}></div>
         </div>
         <div ref={terminalRef} className={styles.terminalBody}>
           <div>

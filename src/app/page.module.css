@@ -3,6 +3,7 @@
   align-items: center;
   font-family: "Roboto", sans-serif;
   padding: 5rem;
+  margin-top: 100px;
 }
 
 .tituloHeaderSpan {
@@ -21,6 +22,7 @@
   margin-right: 24px;
   text-decoration: none;
   transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 15px;
 }
 
 .botaoUm:hover {
@@ -39,6 +41,7 @@
   margin-right: 24px;
   text-decoration: none;
   transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 15px;
 }
 
 .botaoDois:hover {

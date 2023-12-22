@@ -2,6 +2,7 @@
 import { Terminal } from "./components/main/terminal/terminal";
 import styles from "./page.module.css";
 import Navbar from "./components/main/navbar/navbar";
+import { Flip, ToastContainer } from "react-toastify";
 
 const Inicio: React.FC = () => {
   return (
@@ -23,76 +24,6 @@ const Inicio: React.FC = () => {
             harum ducimus quisquam, sit debitis, neque sequi provident,
             inventore fugit reiciendis architecto aspernatur accusantium
             ratione.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At
-            repudiandae consequuntur praesentium recusandae voluptatem eius
-            harum ducimus quisquam, sit debitis, neque sequi provident,
-            inventore fugit reiciendis architecto aspernatur accusantium
-            ratione.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At
-            repudiandae consequuntur praesentium recusandae voluptatem eius
-            harum ducimus quisquam, sit debitis, neque sequi provident,
-            inventore fugit reiciendis architecto aspernatur accusantium
-            ratione.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At
-            repudiandae consequuntur praesentium recusandae voluptatem eius
-            harum ducimus quisquam, sit debitis, neque sequi provident,
-            inventore fugit reiciendis architecto aspernatur accusantium
-            ratione.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At
-            repudiandae consequuntur praesentium recusandae voluptatem eius
-            harum ducimus quisquam, sit debitis, neque sequi provident,
-            inventore fugit reiciendis architecto aspernatur accusantium
-            ratione.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At
-            repudiandae consequuntur praesentium recusandae voluptatem eius
-            harum ducimus quisquam, sit debitis, neque sequi provident,
-            inventore fugit reiciendis architecto aspernatur accusantium
-            ratione.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At
-            repudiandae consequuntur praesentium recusandae voluptatem eius
-            harum ducimus quisquam, sit debitis, neque sequi provident,
-            inventore fugit reiciendis architecto aspernatur accusantium
-            ratione.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At
-            repudiandae consequuntur praesentium recusandae voluptatem eius
-            harum ducimus quisquam, sit debitis, neque sequi provident,
-            inventore fugit reiciendis architecto aspernatur accusantium
-            ratione.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At
-            repudiandae consequuntur praesentium recusandae voluptatem eius
-            harum ducimus quisquam, sit debitis, neque sequi provident,
-            inventore fugit reiciendis architecto aspernatur accusantium
-            ratione.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At
-            repudiandae consequuntur praesentium recusandae voluptatem eius
-            harum ducimus quisquam, sit debitis, neque sequi provident,
-            inventore fugit reiciendis architecto aspernatur accusantium
-            ratione.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At
-            repudiandae consequuntur praesentium recusandae voluptatem eius
-            harum ducimus quisquam, sit debitis, neque sequi provident,
-            inventore fugit reiciendis architecto aspernatur accusantium
-            ratione.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At
-            repudiandae consequuntur praesentium recusandae voluptatem eius
-            harum ducimus quisquam, sit debitis, neque sequi provident,
-            inventore fugit reiciendis architecto aspernatur accusantium
-            ratione.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At
-            repudiandae consequuntur praesentium recusandae voluptatem eius
-            harum ducimus quisquam, sit debitis, neque sequi provident,
-            inventore fugit reiciendis architecto aspernatur accusantium
-            ratione.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At
-            repudiandae consequuntur praesentium recusandae voluptatem eius
-            harum ducimus quisquam, sit debitis, neque sequi provident,
-            inventore fugit reiciendis architecto aspernatur accusantium
-            ratione.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At
-            repudiandae consequuntur praesentium recusandae voluptatem eius
-            harum ducimus quisquam, sit debitis, neque sequi provident,
-            inventore fugit reiciendis architecto aspernatur accusantium
-            ratione.
           </p>{" "}
           <button className={styles.botaoUm}>Acessar</button>
           <button className={styles.botaoDois}>Contato</button>
@@ -101,6 +32,20 @@ const Inicio: React.FC = () => {
           <Terminal />
         </div>
       </main>
+      <ToastContainer
+        position="bottom-center"
+        limit={3}
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss={false}
+        transition={Flip}
+        draggable
+        pauseOnHover={false}
+        theme="dark"
+      />
     </>
   );
 };

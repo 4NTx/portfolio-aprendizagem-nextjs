@@ -1,5 +1,5 @@
-.pontos {
-  animation: piscar 1s infinite;
+.container {
+  background-color: #111111;
   height: auto;
   width: auto;
   -webkit-user-select: none;
@@ -8,27 +8,46 @@
   user-select: none;
 }
 
-.pikachu {
+.imagens {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto {
+  font-size: 1.5rem;
+  margin-top: 1.25rem;
+}
+
+.pontos {
+  animation: piscarPontos 1s infinite;
+}
+
+.lugia {
   height: auto;
   width: auto;
 }
 
-@keyframes digita {
-  0%,
+.pokebola {
+  animation: rodarPokebola 0.5s linear infinite;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes rodarPokebola {
+  0% {
+    transform: rotate(0deg);
+  }
+
   100% {
-    content: "Carregando";
-  }
-
-  33% {
-    content: "Carregando.";
-  }
-
-  66% {
-    content: "Carregando..";
+    transform: rotate(360deg);
   }
 }
 
-@keyframes piscar {
+@keyframes piscarPontos {
   0%,
   100% {
     opacity: 0;
@@ -36,28 +55,5 @@
 
   50% {
     opacity: 1;
-  }
-}
-
-.pokebola {
-  animation: spin 2s linear infinite;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  height: auto;
-  width: auto;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
   }
 }

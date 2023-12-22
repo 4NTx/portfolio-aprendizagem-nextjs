@@ -4,14 +4,15 @@ import styles from "./loading.module.css";
 
 export default function Loading() {
   return (
-    <div className="bg-[#233E47] select-none">
-      <div className="min-h-screen flex flex-col justify-center items-center font-mono">
+    <section className={styles.container}>
+      <div className={styles.imagens}>
         <Image
-          src="/imagens/pikachu.gif"
-          alt="Carregando"
-          width={300}
-          height={300}
-          className={styles.pikachu}
+          src="/imagens/lugia.gif"
+          alt="Lugia"
+          width={250}
+          height={250}
+          className={styles.lugia}
+          priority
         />
         <div className={styles.pokebola}>
           <Image
@@ -19,12 +20,13 @@ export default function Loading() {
             alt="Pokebola"
             width={160}
             height={160}
+            priority
           />
         </div>
-        <div className="text-[1.5rem] mt-5">
+        <p className={styles.texto}>
           Carregando<span className={styles.pontos}>...</span>
-        </div>
+        </p>
       </div>
-    </div>
+    </section>
   );
 }
