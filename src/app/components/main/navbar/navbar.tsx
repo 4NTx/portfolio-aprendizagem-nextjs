@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
     <nav className={styles.navbar}>
       <div className={styles.logo}>
         <Link href="/projetos">
-          <Image src="/imagens/logo.svg" alt="Logo" width={150} height={110} />
+          <Image src="/imagens/logo.svg" alt="Logo" width={140} height={110} />
         </Link>
       </div>
       <ul className={styles.itemsNavbar}>
