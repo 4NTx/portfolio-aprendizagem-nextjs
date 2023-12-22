@@ -1,5 +1,6 @@
 "use client";
 import { Terminal } from "./components/main/terminal/terminal";
+import SessaoHero from "./components/main/sessaoHero/sessaoHero";
 import styles from "./page.module.css";
 import Navbar from "./components/main/navbar/navbar";
 import { Flip, ToastContainer } from "react-toastify";
@@ -12,21 +13,7 @@ const Inicio: React.FC = () => {
       </div>
       <main className={styles.container}>
         <div>
-          <h1 className={styles.tituloHeader}>
-            Lorem ipsum dolor sit amet <br />
-            <span className={styles.tituloHeaderSpan}>
-              consectetur adipisicing elit.
-            </span>
-          </h1>
-          <p className={styles.textoHeader}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At
-            repudiandae consequuntur praesentium recusandae voluptatem eius
-            harum ducimus quisquam, sit debitis, neque sequi provident,
-            inventore fugit reiciendis architecto aspernatur accusantium
-            ratione.
-          </p>{" "}
-          <button className={styles.botaoUm}>Acessar</button>
-          <button className={styles.botaoDois}>Contato</button>
+          <SessaoHero />
         </div>
         <div className={styles.terminal}>
           <Terminal />
