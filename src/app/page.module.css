@@ -1,7 +1,15 @@
-.container {
+.heroContainer {
   display: flex;
   align-items: center;
   font-family: "Roboto", sans-serif;
   padding: 5rem;
   margin-top: 100px;
+}
+
+.skillsContainer {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  background-color: #181A1B;
+  border-radius: 10px;
 }

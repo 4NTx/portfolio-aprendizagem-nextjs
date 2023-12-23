@@ -1,5 +1,6 @@
 "use client";
 import { Terminal } from "./components/main/terminal/terminal";
+import SessaoSkills from "./components/main/sessaoSkills/sessaoSkills";
 import SessaoHero from "./components/main/sessaoHero/sessaoHero";
 import styles from "./page.module.css";
 import Navbar from "./components/main/navbar/navbar";
@@ -11,7 +12,7 @@ const Inicio: React.FC = () => {
       <div>
         <Navbar />
       </div>
-      <main className={styles.container}>
+      <main className={styles.heroContainer}>
         <div>
           <SessaoHero />
         </div>
@@ -19,6 +20,12 @@ const Inicio: React.FC = () => {
           <Terminal />
         </div>
       </main>
+
+      <section className={styles.skillsContainer}>
+        <div>
+          <SessaoSkills />
+        </div>
+      </section>
       <ToastContainer
         position="bottom-center"
         limit={3}
