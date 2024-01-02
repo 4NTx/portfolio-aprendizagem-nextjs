@@ -19,6 +19,38 @@ const dadosProjetos = [
     ultimaAtualizacao: "2024-01-01",
     icone: "/imagens/tecnologias/sql.svg",
   },
+  {
+    nome: "Projeto 1",
+    privado: false,
+    descricao: "Descrição do Projeto 1",
+    linguagem: "JavaScript",
+    ultimaAtualizacao: "2024-01-01",
+    icone: "/imagens/tecnologias/sql.svg",
+  },
+  {
+    nome: "Projeto 1",
+    privado: false,
+    descricao: "Descrição do Projeto 1",
+    linguagem: "JavaScript",
+    ultimaAtualizacao: "2024-01-01",
+    icone: "/imagens/tecnologias/sql.svg",
+  },
+  {
+    nome: "Projeto 1",
+    privado: false,
+    descricao: "Descrição do Projeto 1",
+    linguagem: "JavaScript",
+    ultimaAtualizacao: "2024-01-01",
+    icone: "/imagens/tecnologias/sql.svg",
+  },
+  {
+    nome: "Projeto 1",
+    privado: false,
+    descricao: "Descrição do Projeto 1",
+    linguagem: "JavaScript",
+    ultimaAtualizacao: "2024-01-01",
+    icone: "/imagens/tecnologias/sql.svg",
+  },
 ];
 
 const SessaoProjetos = () => {
@@ -35,7 +67,11 @@ const SessaoProjetos = () => {
 
   return (
     <div className={styles.sessaoProjeto}>
-      <h2>Meus Projetos</h2>
+      <div className={styles.titulo}>
+        <h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing <span>elit.</span>
+        </h1>
+      </div>
       <div className={styles.projetos}>
         {dadosProjetos.map((projeto, indice) => (
           <div key={indice} className={styles.projeto}>
