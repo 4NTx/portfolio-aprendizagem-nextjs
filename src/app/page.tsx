@@ -5,6 +5,7 @@ import SessaoHero from "./components/main/sessaoHero/sessaoHero";
 import styles from "./page.module.css";
 import Navbar from "./components/main/navbar/navbar";
 import { Flip, ToastContainer } from "react-toastify";
+import SessaoProjetos from "./components/main/sessaoProjetos/sessaoProjetos";
 
 const Inicio: React.FC = () => {
   return (
@@ -16,7 +17,7 @@ const Inicio: React.FC = () => {
         <div>
           <SessaoHero />
         </div>
-        <div className={styles.terminal}>
+        <div>
           <Terminal />
         </div>
       </main>
@@ -26,6 +27,13 @@ const Inicio: React.FC = () => {
           <SessaoSkills />
         </div>
       </section>
+
+      <section className={styles.projetosContainer}>
+        <div>
+          <SessaoProjetos />
+        </div>
+      </section>
+
       <ToastContainer
         position="bottom-center"
         limit={3}

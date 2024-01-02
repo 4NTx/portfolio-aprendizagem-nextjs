@@ -1,0 +1,61 @@
+.sessaoProjeto {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  color: #24292e;
+  background-color: #f6f8fa;
+  padding: 16px;
+}
+
+.sessaoProjeto h2 {
+  font-size: 24px;
+  color: #24292e;
+  margin-bottom: 16px;
+}
+
+.projetos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.projeto {
+  background-color: white;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  width: 440px;
+  height: 143px;
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.projeto h3 {
+  font-size: 20px;
+  margin: 0;
+  color: #0366d6;
+}
+
+.projeto p {
+  margin: 8px 0;
+  color: #586069;
+}
+
+.detalhesProjeto {
+  font-size: 12px;
+  color: #586069;
+  display: flex;
+  gap: 24px;
+}
+
+.iconeProjeto {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.cabecalhoProjeto {
+  display: flex;
+  align-items: center;
+}
